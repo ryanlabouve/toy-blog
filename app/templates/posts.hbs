@@ -1,0 +1,17 @@
+<div class="clearfix">
+  <a href="#" class="left btn" {{action "prevPage"}}>&lt; Prev</a>
+  <a href="#" class="right btn" {{action "nextPage"}}>Next &gt;</a>
+  <h1 class="border-bottom py2 center">Posts ({{metaData.total}})</h1>
+</div>
+{{#each model as |post|}}
+  <div class="p2 border-bottom uppercase">
+    <div class="bold">{{post.title}}</div>
+    <p>
+      {{post.body}}
+    </p>
+  </div>
+{{/each}}
+<div class="clearfix">
+  <a href="#" class="left btn" {{action "prevPage"}}>&lt; Prev</a>
+  <a href="#" class="right btn" {{action "nextPage"}}>Next &gt;</a>
+</div>
